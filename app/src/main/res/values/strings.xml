@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WiFi-Share</string>
+    <string name="add_accessPoint">Compartir mi red</string>
+    <string name="title_activity_network_details">Detalle de red</string>
+    <string name="title_activity_share_access_point">Compartir mi red</string>
+    <string name="logout_session">Cerrar sesión</string>
+    <string name="modify_network">Modificar red</string>
+    <string name="delete_network">Eliminar red</string>
+    <string name="modify_my_network">Modificar mi red</string>
+    <string name="modify_button">MODIFICAR</string>
+    <string name="login">WiFi-Share</string>
+    <string name="available_networks">Redes disponibles</string>
+    <string name="sponsor">Patrocinar</string>
+    <string name="unsponsor">Quitar patrocinio</string>
+</resources>

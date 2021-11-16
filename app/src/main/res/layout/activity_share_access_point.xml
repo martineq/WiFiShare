@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ShareAccessPointActivity"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingLeft="@dimen/activity_left_margin"
+    android:paddingRight="@dimen/activity_right_margin"
+    android:paddingTop="@dimen/activity_top_margin"
+    android:paddingBottom="@dimen/activity_bottom_margin"
+    tools:context="ar.uba.fi.tdp.wifi_share.views_controller.shareAccessPoint.ShareAccessPointActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/linearLayout2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Información sobre el Access Point"
+                android:id="@+id/accessPointText"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/edit_text_box_description_left_margin"
+                android:layout_marginBottom="30px"
+                android:textStyle="bold" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cargar datos obtenidos de mi conexión Wi-Fi actual"
+                android:id="@+id/wifiInformationSwich"
+                android:layout_below="@+id/accessPointText"
+                android:checked="false"
+                android:layout_marginBottom="30px"
+                android:textColor="#8f8f8f"
+                android:textSize="12dp"
+                android:singleLine="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de red:"
+                android:id="@+id/networkName"
+                android:layout_below="@+id/wifiInformationSwich"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_marginLeft="@dimen/edit_text_box_description_left_margin" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addNetworkName"
+                android:layout_below="@+id/networkName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password de red:"
+                android:id="@+id/networkSecret"
+                android:layout_below="@+id/addNetworkName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/edit_text_box_description_left_margin" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addNetworkPassword"
+                android:layout_marginBottom="30px"
+                android:layout_below="@+id/networkSecret"
+                android:layout_alignParentStart="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dirección MAC:"
+                android:id="@+id/addMacAddress"
+                android:layout_below="@+id/addNetworkPassword"
+                android:layout_marginLeft="@dimen/edit_text_box_description_left_margin" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addMACAdressID"
+                android:layout_below="@+id/addMacAddress"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="30px" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Información sobre la ubicación del Access Point"
+                android:id="@+id/accessPointText2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_marginLeft="@dimen/edit_text_box_description_left_margin"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/addMACAdressID"
+                android:layout_marginBottom="30px"
+                android:textStyle="bold" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cargar datos obtenidos de mi ubicación actual"
+                android:id="@+id/locationInformationSwich"
+                android:layout_below="@+id/accessPointText2"
+                android:checked="false"
+                android:layout_marginBottom="30px"
+                android:textColor="#8f8f8f"
+                android:textSize="12dp"
+                android:singleLine="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dirección:"
+                android:id="@+id/addNetworkAddress"
+                android:layout_below="@+id/locationInformationSwich"
+                android:layout_marginLeft="@dimen/edit_text_box_description_left_margin" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addNetworkAddressID"
+                android:layout_below="@+id/addNetworkAddress"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altura:"
+                android:id="@+id/addNetworkAddressNumber"
+                android:layout_below="@+id/addNetworkAddressID"
+                android:layout_marginLeft="@dimen/edit_text_box_description_left_margin" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addNetworkAddressNumberID"
+                android:layout_below="@+id/addNetworkAddressNumber"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ciudad:"
+                android:id="@+id/addNetworkCity"
+                android:layout_below="@+id/addNetworkAddressNumberID"
+                android:layout_marginLeft="@dimen/edit_text_box_description_left_margin" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addNetworkCityID"
+                android:layout_below="@+id/addNetworkCity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitud:"
+                android:id="@+id/addLatitude"
+                android:layout_below="@+id/addNetworkCityID"
+                android:layout_marginLeft="@dimen/edit_text_box_description_left_margin" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addLatitudeID"
+                android:layout_below="@+id/addLatitude"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longitud:"
+                android:id="@+id/addLongitude"
+                android:layout_below="@+id/addLatitudeID"
+                android:layout_marginLeft="@dimen/edit_text_box_description_left_margin" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addLongitudeID"
+                android:layout_below="@+id/addLongitude"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="true"
+        android:id="@+id/linearLayout2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignWithParentIfMissing="false">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCELAR"
+            android:id="@+id/skipAddNetworkButton"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compartir"
+            android:id="@+id/shareNewNetworkButton"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

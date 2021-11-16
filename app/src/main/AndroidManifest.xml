@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ar.uba.fi.tdp.wifi_share" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".views_controller.networksFinder.NetworksFinderActivity"
+            android:label="@string/available_networks"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".views_controller.networkDetails.NetworkDetailsActivity"
+            android:label="@string/title_activity_network_details"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".views_controller.shareAccessPoint.ShareAccessPointActivity"
+            android:label="@string/title_activity_share_access_point" >
+        </activity>
+
+        <activity
+            android:name=".views_controller.appLoader.StartupActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

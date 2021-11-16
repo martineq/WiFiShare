@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Redes">
+    <item android:id="@+id/add_AP" android:title="@string/add_accessPoint"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/logout" android:title="@string/logout_session"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+</menu>

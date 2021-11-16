@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:longClickable="true"
+        android:focusableInTouchMode="false"
+        android:progressBackgroundTint="#f4f4f4"
+        android:progressTint="#ffee00"
+        android:progressTintMode="src_atop"
+        android:progressBackgroundTintMode="src_atop" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:id="@+id/cancelRankingButton"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aceptar"
+            android:id="@+id/acceptRankingButton"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
